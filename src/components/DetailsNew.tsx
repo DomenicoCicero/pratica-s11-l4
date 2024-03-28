@@ -39,20 +39,20 @@ const DetailsNew = () => {
         <Col xs={10}>
           {singleNew && (
             <Card className="my-3">
-              <Card.Img variant="top" src={singleNew?.image_url} />
+              <Card.Img variant="top" src={singleNew.image_url} />
               <Card.Body>
-                <Card.Text className="fst-italic">{singleNew?.news_site}</Card.Text>
-                <Card.Title className="text-center mb-3 summary">{singleNew?.title}</Card.Title>
-                <Card.Text style={{ marginBlockEnd: "40px" }}>{singleNew?.summary}</Card.Text>
+                <Card.Text className="fst-italic">{singleNew.news_site}</Card.Text>
+                <Card.Title className="text-center mb-3 summary">{singleNew.title}</Card.Title>
+                <Card.Text style={{ marginBlockEnd: "40px" }}>{singleNew.summary}</Card.Text>
                 <Card.Text>
-                  <span className="fw-bold d-block">Published: </span> {singleNew?.published_at.substring(0, 10)}
+                  <span className="fw-bold d-block">Published: </span> {singleNew.published_at.substring(0, 10)}
                 </Card.Text>
                 <Card.Text>
                   <span className="fw-bold d-block">Updated: </span>
-                  {singleNew?.updated_at.substring(0, 10)}
+                  {singleNew.updated_at.substring(0, 10)}
                 </Card.Text>
                 <Card.Text>
-                  <a href={singleNew?.url} target="_blanck">
+                  <a href={singleNew.url} target="_blanck">
                     Scopri di più
                   </a>
                 </Card.Text>
